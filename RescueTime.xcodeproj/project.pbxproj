@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		79DD57DA1CE7ECD8004DCA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD57D91CE7ECD8004DCA72 /* AppDelegate.swift */; };
-		79DD57DC1CE7ECD8004DCA72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD57DB1CE7ECD8004DCA72 /* ViewController.swift */; };
+		79DD57DC1CE7ECD8004DCA72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD57DB1CE7ECD8004DCA72 /* LoginViewController.swift */; };
 		79DD57DF1CE7ECD8004DCA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79DD57DD1CE7ECD8004DCA72 /* Main.storyboard */; };
 		79DD57E11CE7ECD8004DCA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DD57E01CE7ECD8004DCA72 /* Assets.xcassets */; };
 		79DD57E41CE7ECD8004DCA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79DD57E21CE7ECD8004DCA72 /* LaunchScreen.storyboard */; };
 		79DD57EF1CE7ECD8004DCA72 /* RescueTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD57EE1CE7ECD8004DCA72 /* RescueTimeTests.swift */; };
 		79DD57FA1CE7ECD8004DCA72 /* RescueTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD57F91CE7ECD8004DCA72 /* RescueTimeUITests.swift */; };
+		79DD58081CE7F3F7004DCA72 /* GetHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD58071CE7F3F7004DCA72 /* GetHttpRequest.swift */; };
+		79DD580A1CE7F552004DCA72 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD58091CE7F552004DCA72 /* HttpRequest.swift */; };
+		79DD580F1CE84BD7004DCA72 /* DailySummaryFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD580E1CE84BD7004DCA72 /* DailySummaryFeedModel.swift */; };
+		79FDC3CD1D0D0C26002EAAD9 /* ObjectMapper.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 79FDC3BD1D0D0BAC002EAAD9 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79FDC3CF1D0D0E4E002EAAD9 /* DailySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FDC3CE1D0D0E4E002EAAD9 /* DailySummary.swift */; };
+		79FDC3D11D0D1BFE002EAAD9 /* CollectionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FDC3D01D0D1BFE002EAAD9 /* CollectionObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +37,82 @@
 			remoteGlobalIDString = 79DD57D51CE7ECD8004DCA72;
 			remoteInfo = RescueTime;
 		};
+		79FDC3BC1D0D0BAC002EAAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAC8F7619F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOS";
+		};
+		79FDC3BE1D0D0BAC002EAAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD1602FF1AC023D5000CD69A;
+			remoteInfo = "ObjectMapper-Mac";
+		};
+		79FDC3C01D0D0BAC002EAAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A2AD03D1B2C78540097E150;
+			remoteInfo = "ObjectMapper-watchOS";
+		};
+		79FDC3C21D0D0BAC002EAAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A05B7A61BE274BE00F19B53;
+			remoteInfo = "ObjectMapper-tvOS";
+		};
+		79FDC3C41D0D0BAC002EAAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAC8F8119F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOSTests";
+		};
+		79FDC3C61D0D0BAC002EAAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD1603091AC023D6000CD69A;
+			remoteInfo = "ObjectMapper-MacTests";
+		};
+		79FDC3C81D0D0BAC002EAAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A05B7AF1BE274BE00F19B53;
+			remoteInfo = "ObjectMapper-tvOSTests";
+		};
+		79FDC3CA1D0D0BDF002EAAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AAC8F7519F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79FDC3CC1D0D0BED002EAAD9 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				79FDC3CD1D0D0C26002EAAD9 /* ObjectMapper.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		79DD57D61CE7ECD8004DCA72 /* RescueTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RescueTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DD57D91CE7ECD8004DCA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79DD57DB1CE7ECD8004DCA72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79DD57DB1CE7ECD8004DCA72 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		79DD57DE1CE7ECD8004DCA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79DD57E01CE7ECD8004DCA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79DD57E31CE7ECD8004DCA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +123,12 @@
 		79DD57F51CE7ECD8004DCA72 /* RescueTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RescueTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DD57F91CE7ECD8004DCA72 /* RescueTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RescueTimeUITests.swift; sourceTree = "<group>"; };
 		79DD57FB1CE7ECD8004DCA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79DD58071CE7F3F7004DCA72 /* GetHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHttpRequest.swift; sourceTree = "<group>"; };
+		79DD58091CE7F552004DCA72 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		79DD580E1CE84BD7004DCA72 /* DailySummaryFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySummaryFeedModel.swift; sourceTree = "<group>"; };
+		79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
+		79FDC3CE1D0D0E4E002EAAD9 /* DailySummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySummary.swift; sourceTree = "<group>"; };
+		79FDC3D01D0D1BFE002EAAD9 /* CollectionObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +159,7 @@
 		79DD57CD1CE7ECD8004DCA72 = {
 			isa = PBXGroup;
 			children = (
+				79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */,
 				79DD57D81CE7ECD8004DCA72 /* RescueTime */,
 				79DD57ED1CE7ECD8004DCA72 /* RescueTimeTests */,
 				79DD57F81CE7ECD8004DCA72 /* RescueTimeUITests */,
@@ -97,12 +180,15 @@
 		79DD57D81CE7ECD8004DCA72 /* RescueTime */ = {
 			isa = PBXGroup;
 			children = (
+				79DD580B1CE84B4E004DCA72 /* models */,
 				79DD57D91CE7ECD8004DCA72 /* AppDelegate.swift */,
-				79DD57DB1CE7ECD8004DCA72 /* ViewController.swift */,
+				79DD57DB1CE7ECD8004DCA72 /* LoginViewController.swift */,
 				79DD57DD1CE7ECD8004DCA72 /* Main.storyboard */,
 				79DD57E01CE7ECD8004DCA72 /* Assets.xcassets */,
 				79DD57E21CE7ECD8004DCA72 /* LaunchScreen.storyboard */,
 				79DD57E51CE7ECD8004DCA72 /* Info.plist */,
+				79DD58071CE7F3F7004DCA72 /* GetHttpRequest.swift */,
+				79DD58091CE7F552004DCA72 /* HttpRequest.swift */,
 			);
 			path = RescueTime;
 			sourceTree = "<group>";
@@ -125,6 +211,30 @@
 			path = RescueTimeUITests;
 			sourceTree = "<group>";
 		};
+		79DD580B1CE84B4E004DCA72 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				79DD580E1CE84BD7004DCA72 /* DailySummaryFeedModel.swift */,
+				79FDC3CE1D0D0E4E002EAAD9 /* DailySummary.swift */,
+				79FDC3D01D0D1BFE002EAAD9 /* CollectionObject.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		79FDC3B31D0D0BAC002EAAD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79FDC3BD1D0D0BAC002EAAD9 /* ObjectMapper.framework */,
+				79FDC3BF1D0D0BAC002EAAD9 /* ObjectMapper.framework */,
+				79FDC3C11D0D0BAC002EAAD9 /* ObjectMapper.framework */,
+				79FDC3C31D0D0BAC002EAAD9 /* ObjectMapper.framework */,
+				79FDC3C51D0D0BAC002EAAD9 /* ObjectMapper-iOSTests.xctest */,
+				79FDC3C71D0D0BAC002EAAD9 /* ObjectMapper-MacTests.xctest */,
+				79FDC3C91D0D0BAC002EAAD9 /* ObjectMapper-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +245,12 @@
 				79DD57D21CE7ECD8004DCA72 /* Sources */,
 				79DD57D31CE7ECD8004DCA72 /* Frameworks */,
 				79DD57D41CE7ECD8004DCA72 /* Resources */,
+				79FDC3CC1D0D0BED002EAAD9 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				79FDC3CB1D0D0BDF002EAAD9 /* PBXTargetDependency */,
 			);
 			name = RescueTime;
 			productName = RescueTime;
@@ -215,6 +327,12 @@
 			mainGroup = 79DD57CD1CE7ECD8004DCA72;
 			productRefGroup = 79DD57D71CE7ECD8004DCA72 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 79FDC3B31D0D0BAC002EAAD9 /* Products */;
+					ProjectRef = 79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				79DD57D51CE7ECD8004DCA72 /* RescueTime */,
@@ -223,6 +341,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		79FDC3BD1D0D0BAC002EAAD9 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 79FDC3BC1D0D0BAC002EAAD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79FDC3BF1D0D0BAC002EAAD9 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 79FDC3BE1D0D0BAC002EAAD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79FDC3C11D0D0BAC002EAAD9 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 79FDC3C01D0D0BAC002EAAD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79FDC3C31D0D0BAC002EAAD9 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = 79FDC3C21D0D0BAC002EAAD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79FDC3C51D0D0BAC002EAAD9 /* ObjectMapper-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-iOSTests.xctest";
+			remoteRef = 79FDC3C41D0D0BAC002EAAD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79FDC3C71D0D0BAC002EAAD9 /* ObjectMapper-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-MacTests.xctest";
+			remoteRef = 79FDC3C61D0D0BAC002EAAD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79FDC3C91D0D0BAC002EAAD9 /* ObjectMapper-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-tvOSTests.xctest";
+			remoteRef = 79FDC3C81D0D0BAC002EAAD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		79DD57D41CE7ECD8004DCA72 /* Resources */ = {
@@ -256,8 +426,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79DD57DC1CE7ECD8004DCA72 /* ViewController.swift in Sources */,
+				79FDC3D11D0D1BFE002EAAD9 /* CollectionObject.swift in Sources */,
+				79DD57DC1CE7ECD8004DCA72 /* LoginViewController.swift in Sources */,
+				79DD580A1CE7F552004DCA72 /* HttpRequest.swift in Sources */,
+				79DD580F1CE84BD7004DCA72 /* DailySummaryFeedModel.swift in Sources */,
 				79DD57DA1CE7ECD8004DCA72 /* AppDelegate.swift in Sources */,
+				79DD58081CE7F3F7004DCA72 /* GetHttpRequest.swift in Sources */,
+				79FDC3CF1D0D0E4E002EAAD9 /* DailySummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +464,11 @@
 			isa = PBXTargetDependency;
 			target = 79DD57D51CE7ECD8004DCA72 /* RescueTime */;
 			targetProxy = 79DD57F61CE7ECD8004DCA72 /* PBXContainerItemProxy */;
+		};
+		79FDC3CB1D0D0BDF002EAAD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectMapper-iOS";
+			targetProxy = 79FDC3CA1D0D0BDF002EAAD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -484,6 +664,7 @@
 				79DD58001CE7ECD8004DCA72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79DD58011CE7ECD8004DCA72 /* Build configuration list for PBXNativeTarget "RescueTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +673,7 @@
 				79DD58031CE7ECD8004DCA72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79DD58041CE7ECD8004DCA72 /* Build configuration list for PBXNativeTarget "RescueTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +682,7 @@
 				79DD58061CE7ECD8004DCA72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
