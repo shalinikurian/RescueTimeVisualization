@@ -16,7 +16,6 @@
 		79DD57FA1CE7ECD8004DCA72 /* RescueTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD57F91CE7ECD8004DCA72 /* RescueTimeUITests.swift */; };
 		79DD58081CE7F3F7004DCA72 /* GetHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD58071CE7F3F7004DCA72 /* GetHttpRequest.swift */; };
 		79DD580A1CE7F552004DCA72 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD58091CE7F552004DCA72 /* HttpRequest.swift */; };
-		79DD580F1CE84BD7004DCA72 /* DailySummaryFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DD580E1CE84BD7004DCA72 /* DailySummaryFeedModel.swift */; };
 		79FDC3CD1D0D0C26002EAAD9 /* ObjectMapper.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 79FDC3BD1D0D0BAC002EAAD9 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79FDC3CF1D0D0E4E002EAAD9 /* DailySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FDC3CE1D0D0E4E002EAAD9 /* DailySummary.swift */; };
 		79FDC3D11D0D1BFE002EAAD9 /* CollectionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FDC3D01D0D1BFE002EAAD9 /* CollectionObject.swift */; };
@@ -125,7 +124,6 @@
 		79DD57FB1CE7ECD8004DCA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79DD58071CE7F3F7004DCA72 /* GetHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHttpRequest.swift; sourceTree = "<group>"; };
 		79DD58091CE7F552004DCA72 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
-		79DD580E1CE84BD7004DCA72 /* DailySummaryFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySummaryFeedModel.swift; sourceTree = "<group>"; };
 		79FDC3B21D0D0BAC002EAAD9 /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
 		79FDC3CE1D0D0E4E002EAAD9 /* DailySummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySummary.swift; sourceTree = "<group>"; };
 		79FDC3D01D0D1BFE002EAAD9 /* CollectionObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionObject.swift; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 		79DD580B1CE84B4E004DCA72 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				79DD580E1CE84BD7004DCA72 /* DailySummaryFeedModel.swift */,
 				79FDC3CE1D0D0E4E002EAAD9 /* DailySummary.swift */,
 				79FDC3D01D0D1BFE002EAAD9 /* CollectionObject.swift */,
 			);
@@ -429,7 +426,6 @@
 				79FDC3D11D0D1BFE002EAAD9 /* CollectionObject.swift in Sources */,
 				79DD57DC1CE7ECD8004DCA72 /* LoginViewController.swift in Sources */,
 				79DD580A1CE7F552004DCA72 /* HttpRequest.swift in Sources */,
-				79DD580F1CE84BD7004DCA72 /* DailySummaryFeedModel.swift in Sources */,
 				79DD57DA1CE7ECD8004DCA72 /* AppDelegate.swift in Sources */,
 				79DD58081CE7F3F7004DCA72 /* GetHttpRequest.swift in Sources */,
 				79FDC3CF1D0D0E4E002EAAD9 /* DailySummary.swift in Sources */,
